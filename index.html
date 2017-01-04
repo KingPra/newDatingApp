@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>  
+        <title>Hot Stuff</title>
+        <!--add css file-->
+        <link rel="stylesheet" href="style.css"/>
+        <!--add js file-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+        <script src="app.js"></script>
+        <script id="profile" type="x-mustache-template">
+            <img src="{{image}}"/>
+                <h1>{{ name }}</h1>
+                <p>Location: {{ state }}</p>
+                <p>Birthdate: {{ bd }}</p>
+                <button class="decide" id="yesWay">Oh Yes!</button>
+                <button class="decide" id="noWay">No No No</button>
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>New Dating App</h1>
+            <button class="gender" id="female">Female</button>
+            <button class="gender" id="male">Male</button>
+        </header>
+            <main>
+                
+                <section class="profileBox">
+                </section> 
+            </main>
+            <footer>
+                <p>Copyright 2017</p>
+            </footer>
+    </body>
+</html>

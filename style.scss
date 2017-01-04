@@ -1,0 +1,52 @@
+/* Include Foundation */
+ @import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+body {
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+.gender {
+    width: 150px;
+    padding: 20px 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.profileBox {
+    @include grid-row();
+
+    div {
+        background-color: grey;
+        border: 1px solid black;
+        width: 350px;
+        //height: 350px;
+        margin: 5px;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+        margin-left: 10px;
+    }
+
+}
+
+    .decide {
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: white;
+        width: 150px;
+        height: 30px;
+    }
