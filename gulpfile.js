@@ -32,3 +32,10 @@
       return gulp.src('app.js')
         .pipe(gulp.dest('public/'));
   });
+
+
+  gulp.task('watch', ['default'], function () {
+   gulp.watch('*.html',['html']); //watches all html files
+   gulp.watch('scss/*.scss', ['css']);
+   gulp.watch('*.js', ['js']);
+});
