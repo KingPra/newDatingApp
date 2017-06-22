@@ -24,7 +24,7 @@ function getProfile(results) {
                     image: response.results[i].picture.large,
                     name: response.results[i].name.first,
                     state: response.results[i].location.state,
-                    bd: response.results[i].dob, 
+                    bd: response.results[i].dob,
                     button: [
                         { buttonNo: 'no no no' },
                         { buttonYes: 'yesWay' },

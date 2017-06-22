@@ -11,26 +11,26 @@
 
   // Step 2: create default tasks
   gulp.task('default', ['html', 'css', 'js']);
-  
+
 
   // Step 3: create subtasks
   gulp.task('html', function () {
       return gulp.src('index.html')
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('css', function () {
       // Convert style.scss into style.css
-      // Copy to public/ 
+      // Copy to public/
       return gulp.src('style.scss')
         .pipe(sass()) // requires gulp-sass
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('js', function () {
       // Copy js file into public/
       return gulp.src('app.js')
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
   });
 
 
